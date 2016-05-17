@@ -8,3 +8,13 @@
     - mongo
     - backup
 
+- name: setup daily mongo backup
+  cron:
+    name: "daily mongo backup"
+    minute: "5"
+    hour: "{{ mongo_backup_hour }}"
+    job: "/usr/local/bin/mongobackup.sh > /dev/null 2>&1"
+  tags:
+    - cron
+    - mongo
+    - backup

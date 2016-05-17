@@ -14,6 +14,7 @@ Role Variables
 ```yaml
 mongo_backup_path: "/data/db/backups/"
 mongo_backup_db: ""
+mongo_backup_hour: "0"
 ```
 
 Dependencies
