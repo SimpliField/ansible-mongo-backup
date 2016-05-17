@@ -1,4 +1,4 @@
-Mongo backup
+Mongo backup [![Build Status](https://travis-ci.org/SimpliField/ansible-mongo-backup.svg?branch=master)](https://travis-ci.org/SimpliField/ansible-mongo-backup)
 =========
 
 Setup daily mongodb backups
