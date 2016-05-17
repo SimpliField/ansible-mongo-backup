@@ -1,0 +1,3 @@
+---
+mongo_backup_path: "/data/db/backups/"
+mongo_backup_db: ""

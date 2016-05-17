@@ -1,0 +1,10 @@
+---
+- name: copy mongobackup script
+  template:
+    src: "mongobackup.sh"
+    dest: "/usr/local/bin/mongobackup.sh"
+    mode: 0755
+  tags:
+    - mongo
+    - backup
+
