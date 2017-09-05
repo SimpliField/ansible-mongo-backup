@@ -15,6 +15,7 @@ Role Variables
 mongo_backup_path: "/data/db/backups/"
 mongo_backup_db: ""
 mongo_backup_hour: "0"
+mongo_backup_minute: "5"
 mongo_backup_gzip: false
 ```
 
