@@ -32,6 +32,7 @@ Example Playbook
 - hosts: servers
   roles:
   - { role: simplifield.mongo_backup, mongo_backup_db: dev_db }
+  - { role: simplifield.mongo_backup, mongo_backup_db: dev_db2 }
 ```
 
 License
