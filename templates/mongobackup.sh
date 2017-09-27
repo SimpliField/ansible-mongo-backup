@@ -14,8 +14,5 @@ mongodump --db "${database}" \
 # Dump only gridfs and always without gzip
 mongodump --db "${database}" \
   --out "${backupDir}" \
-  --collection 'fs.files'
-mongodump --db "${database}" \
-  --out "${backupDir}" \
   --collection 'fs.files' \
   --collection 'fs.chunks'
