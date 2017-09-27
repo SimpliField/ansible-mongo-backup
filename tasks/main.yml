@@ -10,10 +10,10 @@
 
 - name: setup daily mongo backup
   cron:
-    name: "daily mongo backup"
+    name: "daily mongo backup {{ mongo_backup_db }}"
     minute: "{{ mongo_backup_minute }}"
     hour: "{{ mongo_backup_hour }}"
-    job: "/usr/local/bin/mongobackup.sh > /dev/null 2>&1"
+    job: "/usr/local/bin/mongobackup.sh {{ mongo_backup_db }} > /dev/null 2>&1"
   tags:
     - cron
     - mongo
